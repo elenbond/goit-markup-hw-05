@@ -57,9 +57,18 @@
       <section class="section hero">
         <div class="container hr-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button active-btn hr">
+          <button type="button" class="button active-btn hr" data-modal-open>
             Заказать услугу
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="closing" data-modal-close>
+                <svg class="icon-close" height="18" width="19">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <!--Advantages-->
@@ -128,13 +137,22 @@
           <h3 class="section-title">Чем мы занимаемся</h3>
           <ul class="photos">
             <li class="photos-list">
-              <img src="./images/img1.jpg" alt="Структура кода" width="370" />
+              <div class="pht-thumb">
+                <img src="./images/img1.jpg" alt="Структура кода" width="370" />
+                <p class="pht-txt">Десктопные приложения</p>
+              </div>
             </li>
             <li class="photos-list">
-              <img src="./images/img2.jpg" alt="ПО для мобильных" width="370" />
+              <div class="pht-thumb">
+                <img src="./images/img2.jpg" alt="ПО для мобильных" width="370" />
+                <p class="pht-txt">Мобильные приложения</p>
+              </div>
             </li>
             <li class="photos-list">
-              <img src="./images/img3.jpg" alt="Графика" width="370" />
+              <div class="pht-thumb">
+                <img src="./images/img3.jpg" alt="Графика" width="370" />
+                <p class="pht-txt">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -494,5 +512,6 @@
       </div>
       
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
