@@ -11,6 +11,8 @@
   --hero-background-color: #2f303a;
   --first-border-color: #eeeeee;
   --icon-sites-color: #AFB1B8;
+  --animation-duration: 250ms;
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* основной цвет текста #212121 */
 /* вторичный цвет текста #757575 */
@@ -19,6 +21,8 @@
 /* цвет фона #ffffff */
 /* основной цвет фона #E5E5E5 */
 /* вторичный цвет фона #F5F4FA */
+/* transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 
 p,
 h1,
@@ -98,8 +102,8 @@ body {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .hdr-nav-link:hover,
 .hdr-nav-link:focus,
@@ -143,8 +147,8 @@ body {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .hdr-ct-link:hover,
 .hdr-ct-link:focus {
@@ -210,8 +214,8 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -428,8 +432,8 @@ body {
   color: var(--icon-sites-color);
   box-sizing: border-box; 
   border-radius: 50%;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .site-thumb {
   display: flex;
@@ -481,8 +485,8 @@ body {
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
   opacity: 0;
 }
 .hover-paragraphe {
@@ -496,8 +500,8 @@ body {
   text-align: left; 
   color: var(--second-text-color);
   transform: translatey(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
   opacity: 0;
 }
 .ct-link .link:hover .portfolio-paragraphe::before,
@@ -556,8 +560,8 @@ body {
   display: block;
   padding: 6px 22px;
   margin: auto;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .active-btn {
   background-color: var(--accent-color);
@@ -571,8 +575,8 @@ body {
   display: block;
   padding: 10px 32px;
   margin: auto;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .button-list .button:hover,
 .button-list .button:focus {
@@ -625,8 +629,8 @@ body {
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .clients-list .client:hover,
 .clients-list .client:focus {
@@ -635,6 +639,7 @@ body {
 }
 .icon-g {
   fill: currentColor;
+  /* height: 53.5%; */
 }
 
 /* ----------------------Footer------------------------- */
@@ -695,8 +700,8 @@ body {
   font-style: normal;
   text-decoration: none;
   margin-bottom: 9px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .ftr-link {
   margin-bottom: 9px;
@@ -709,8 +714,8 @@ body {
   color: var(--ftr-contacts-color);
   font-style: normal;
   text-decoration: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .ct-ftr-link:hover,
 .ct-ftr-link:focus,
@@ -738,8 +743,8 @@ body {
   а потом назад) при ховере или фокусе, поэтому поставила свойство
   will-change: transform;  */
   will-change: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing-function);
 }
 .thumb-site-ftr {
   display: flex;
@@ -753,7 +758,6 @@ body {
   fill: currentColor;
   width: 20px;
   height: 20px;
-  
 } 
 .sites-list .ftr-icon:hover,
 .sites-list .ftr-icon:focus  {
